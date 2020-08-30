@@ -1,0 +1,8 @@
+<!-- when a page is rendered it gets hooked up to views folder and serach for the layout and in layout we have our include statement including partials -->
+<!-- dont know the order but these things happen when we render a page from router: 
+hooked up render path with view folder at server
+layout folder seraching and placing things in the router at server -->
+<!-- i still dont understand the use of keyword of local may be it has to be something when something gone wrong with our logic -->
+<% if (locals.errorMessage != null ) { %>
+    <%= errorMessage %>
+<% } %>

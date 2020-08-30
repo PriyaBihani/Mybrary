@@ -1,0 +1,10 @@
+<h2 class= "page-header">Edit Author</h2>
+
+<form action = "/authors/<%= author.id %>?_method=PUT" method = "POST">
+
+    <%- include('_form_fields') %>
+    <div class="btn-row form-row form-row-end">
+        <a class="btn btn-danger"href = "/authors/<%= author.id %>">Cancel</a> <!-- when u clicked it changes the link and then server processes the change and have me redirected to the authors route with / and get method so we render a all authors page -->
+        <button class="btn btn-primary" type = "submit">Update</button><!--Due to the type here form action will only be performed when we clicked the submit button-->
+    </div>
+</form>
